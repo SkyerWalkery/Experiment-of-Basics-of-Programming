@@ -1,0 +1,75 @@
+CREATE TABLE Tab1(fd1, fd2);
+CREATE TABLE Tab2(fd3 PRIMARY_KEY, fd4, fd5);
+
+INSERT INTO Tab1 VALUES(a, 1);
+INSERT INTO Tab1 VALUES(a, 2);
+INSERT INTO Tab1 VALUES(b, 4);
+INSERT INTO Tab2 VALUES(ab, 01, 001);
+INSERT INTO Tab2 VALUES(ab, 02, 001);//检验重复主键值是否通过
+INSERT INTO Tab2 VALUES(bc, 02, 002);
+INSERT INTO Tab2 VALUES(cd, 03, 003);
+INSERT INTO Tab2 VALUES(de, 03, 004);
+INSERT INTO Tab2 VALUES(ef, 04, 004);
+INSERT INTO Tab2 VALUES(fg, 04, 003);
+INSERT INTO Tab2 VALUES(gh, 04, 003);
+INSERT INTO Tab2 VALUES(hi, 04, 003);
+
+SHOW TABLES;
+
+SELECT fd1 FROM Tab1;
+SELECT fd3,fd4,fd5 FROM Tab2;
+SELECT * FROM Tab2;
+SELECT fd4, fd5 FROM Tab2;//检验空格鲁棒性
+SELECT DISTINCT fd4, fd5 FROM Tab2;
+SELECT fd4,fd5 FROM Tab2 WHERE fd4 = 03;
+SELECT fd4,fd5 FROM Tab2 WHERE fd4 = 03 AND fd5=004;
+SELECT fd4,fd5 FROM Tab2 WHERE fd4 = 03 OR fd5=004;
+SELECT fd5,fd4 FROM Tab2 WHERE fd4 = 03 OR fd5=004;
+
+UPDATE Tab1 SET fd2=5 WHERE fd1=b OR fd2=2;
+UPDATE Tab1 SET fd2=3;
+//UPDATE 输入不存在的字段尚未检验！
+ 
+
+
+#ifdef DEBUG
+cout << "hello"<<endl;
+#endif
+
+ALTER TABLE student ADD PRIMARY_KEY(id);
+ALTER TABLE student DROP PRIMARY_KEY;
+ALTER TABLE student ADD hi;
+ALTER TABLE student DROP id;
+
+SELECT *FROM Tab1;
+SELECT * FROM Tab1 LIMIT 1;
+
+
+
+
+
+一些边界样例：
+1.表格有字段，无记录(ok)
+2.表格无字段(ok)
+
+
+
+待完成
+插入时检测主键对应的值是否重复
+插入函数提示错误
+输入中间含 ";"
+文字颜色
+检查WHERE后的字段名是否存在
+列名重复
+
+拓展
+HELP
+ALTER
+SQL COUNT()
+SQL MAX()/MIN()
+SQL LEN()
+报错，红色高亮
+表格空白值
+大小写转化
+
+
