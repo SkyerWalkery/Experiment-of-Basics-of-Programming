@@ -1,0 +1,31 @@
+find_if函数 
+带条件的查找元素，容器元素类型是类的时候，不能使用find函数，只能通过find_if函数来实现。
+find_if函数依次的遍历容器的元素，返回第一个使函数为true的元素的迭代器，如果查找失败则返回end迭代器
+
+
+将其他类的成员函数声明为友元函数
+friend 函数不仅可以是全局函数（非成员函数），还可以是另外一个类的成员函数。
+
+
+vector::end( )返回的是vector最后一个元素后的”结束元素“
+vector::back( )返回的是vector最后一个元素
+类比字符串，end( )返回的是’\0’，back( )返回的是字符串的最后一个字符
+如果试图对vector::end( )返回的元素（结束元素）进行操作，将导致如下错误：
+vector iterator not dereferencable
+————————————————
+版权声明：本文为CSDN博主「theusProme」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/theusProme/article/details/53420031
+
+迭代器iterator是不能赋值为NULL。
+因为迭代器iterator不是一个指针，也是一个类，不能简单的赋值为NULL
+
+cin输入int类型，故意输入其他字符的问题 https://blog.csdn.net/weixin_34008933/article/details/92090380
+
+当缓冲区屁都没有时，cin.ignore()会拦在那等你塞点什么进去
+cin.get()与cin.getline()均为读至回车结束，但前者停在回车前，以后读取接着读，而后者会跳过回车
+cin.get()与cin.getline()均为字符串加上'\0'
+
+英语口语：“余额不足”，“充值”，“提现”英语怎么说？https://zhuanlan.zhihu.com/p/37245644
+
+
+
