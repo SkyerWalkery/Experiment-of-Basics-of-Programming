@@ -1,0 +1,17 @@
+六子棋AI程序---核心讲解_松落-CSDN博客_六子棋 思想
+https://blog.csdn.net/Achenming1314/article/details/105533308?utm_medium=distribute.wap_relevant.none-task-blog-baidujs_title-7
+
+六子棋AI 知识梳理 - 知乎
+https://zhuanlan.zhihu.com/p/140078146
+
+新手立体四子棋AI教程(3)——极值搜索与Alpha-Beta剪枝 - Scobbing - 博客园
+https://www.cnblogs.com/scobbing/p/8663266.html
+
+五子棋估值算法 - maxuewei2 - 博客园
+https://www.cnblogs.com/maxuewei2/p/4825520.html
+
+有哪些快速且高效的随机数生成算法？ - 知乎
+https://www.zhihu.com/question/68506105/answer/264009590?utm_source=qq&utm_medium=social&utm_oi=755831750394908672
+
+五子棋AI算法的实现 - 简书
+https://www.jianshu.com/p/42b75506ba5f
