@@ -6,11 +6,11 @@
 
 ### 2. 使用
 
-    project1运行环境为Windows10,，MS Build 编译。
+    project1运行环境为Windows10,，MSVC 编译。
 
-    project2运行环境为Linux（WSL2 Ubuntu 20.04），g++编译。Windows环境仅做少量测试。文件夹中包含一个基础的makefile与DEBUG时用的Cmakelist。
+    project2运行环境为Linux（WSL2 Ubuntu 20.04），g++ for Linux编译。Windows环境仅做少量测试。文件夹中包含一个基础的makefile与DEBUG时用的Cmakelist。
 
-    project3运行环境为Windows10,，MS Build 编译。
+    project3运行环境为Windows10,，MSVC 编译。
     
     project4可以在Windows10和Linux（WSL2 Ubuntu 20.04）运行。文件夹中包含一个makefile。
 
